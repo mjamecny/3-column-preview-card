@@ -96,3 +96,37 @@ body {
 .btn--dark-cyan {
   color: var(--very-dark-cyan);
 }
+
+@media (max-width: 34em) {
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.2rem 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-card {
+    padding-block: 2.4rem;
+  }
+
+  .preview-card--orange {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    background-color: var(--bright-orange);
+    padding-inline: 3.2rem;
+  }
+
+  .preview-card--dark-cyan {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    padding-inline: 3.2rem;
+  }
+
+  .btn {
+    margin-top: 3.2rem;
+  }
+}
