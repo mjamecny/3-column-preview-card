@@ -36,3 +36,44 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-block: 3.2rem;
+}
+
+.preview-card__title {
+  margin-top: 2.4rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+}
+
+.preview-card__description {
+  margin-top: 2.4rem;
+  color: var(--transparent-white);
+  line-height: 1.6;
+}
+
+.preview-card--orange {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: var(--bright-orange);
+  padding-inline-start: 3.2rem;
+  padding-inline-end: 4.8rem;
+}
+.preview-card--cyan {
+  background-color: var(--dark-cyan);
+  padding-inline: 3.2rem;
+}
+.preview-card--dark-cyan {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--very-dark-cyan);
+  padding-inline-start: 4.8rem;
+  padding-inline-end: 3.2rem;
+}
